@@ -503,6 +503,7 @@ a.baner-basement {
 		border: 1px solid rgba(46, 47, 66, 0.4);
 		background-color: transparent;
 		transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		margin-bottom: 16px;
 }
 .popap-card-text::placeholder {
 	color: rgba(46, 47, 66, 0.4);
