@@ -604,12 +604,12 @@ a.baner-basement {
 	color: #8e8f99;
 	cursor: pointer;
 }		
-.popap-check input:checked ~ .popap-check-box-tru {
+
+.popap-check:has(input:checked) .popap-check-box-tru {
 	background-color: #404bbf;
 	border: none;
-	fill: #F4F4FD;;
+	fill: #F4F4FD;
 }
-
 .privacy-policy {
 	line-height: 1.33;
 	text-decoration: underline;
