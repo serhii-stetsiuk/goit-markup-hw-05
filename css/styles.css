@@ -382,23 +382,15 @@ a.baner-basement {
 .social-icon-another:hover, .social-icon-another:focus {
 	background-color: #31d0aa;
 }
-.subscribe-button {
-		position: relative;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		
-		gap: 16px;
-}
+
 .subscribe-button-image {
-	position: absolute;
-	bottom: 8px;
-		right: 24px;
+	margin-left: 16px;
 	fill: #fff;
 }
 .subscribe-form-one {
-	display: flex;
-	gap: 24px;
+	/* display: flex;
+	justify-content: space-between; */
+	/* gap: 24px; */
 }
 .subscribe-email-input {
 		border: 1px solid #fff;
@@ -414,7 +406,7 @@ a.baner-basement {
 		background-color: transparent;
 		outline: none;
 		padding: 8px 16px;
-
+	display: inline-block;
 	
 }
 .subscribe-email-input::placeholder {
@@ -427,13 +419,20 @@ a.baner-basement {
 .subscribe-button-end {
 		border-radius: 4px;
 		padding: 8px 24px;
-		width: 165px;
+		min-width: 165px;
 		height: 40px;
 		background-color: #4d5ae5;;
 		color: #fff;
-		align-self: self-end;
-		text-align: start;
 		cursor: pointer;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.5;
+		letter-spacing: 0.04em;
+		text-align: left;
+		font-family: "Roboto", sans-serif;
+		border: none;
+		display: flex;
+		justify-content: space-between;
 }
 /* Popap */
 
@@ -559,7 +558,7 @@ a.baner-basement {
 	margin-bottom: 24px;
 	
 }
-.popap-text-all {
+.popap-card-fields label {
 	font-weight: 400;
 		font-size: 12px;
 		line-height: 1.17;

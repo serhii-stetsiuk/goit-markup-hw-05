@@ -508,18 +508,19 @@
         <div class="basement-main-part">
           <p class="social-media">Subscribe</p>
           <form name="subscribe_form" class="subscribe-form-one">
-            <label for="subscribe-email" aria-label="subscribe"></label>
+            <label
+              for="subscribe-email"
+              class="subscribe-novisible"
+              aria-label="subscribe"
+            ></label>
             <input
               type="email"
               class="subscribe-email-input"
               placeholder="E-mail"
               id="subscribe-email"
             />
-
-            <div class="subscribe-button">
-              <button type="submit" class="subscribe-button-end">
-                Subscribe
-              </button>
+            <button type="submit" class="subscribe-button-end">
+              Subscribe
               <svg
                 class="subscribe-button-image transform"
                 width="24"
@@ -527,7 +528,7 @@
               >
                 <use href="./images/icons.svg#icon-subscribe"></use>
               </svg>
-            </div>
+            </button>
           </form>
         </div>
       </div>
@@ -543,7 +544,7 @@
         <form>
           <div class="popap-fields">
             <div class="popap-card-fields">
-              <label for="popap-name" class="popap-text-all">Name</label>
+              <label for="popap-name">Name</label>
               <div class="popap-icon-absolut">
                 <input
                   type="text"
@@ -557,7 +558,7 @@
               </div>
             </div>
             <div class="popap-card-fields">
-              <label for="popap-tel" class="popap-text-all">Phone</label>
+              <label for="popap-tel">Phone</label>
               <div class="popap-icon-absolut">
                 <div class="popap-icon-absolut">
                   <input
@@ -573,7 +574,7 @@
               </div>
             </div>
             <div class="popap-card-fields">
-              <label for="popap-mail" class="popap-text-all">Email</label>
+              <label for="popap-mail">Email</label>
               <div class="popap-icon-absolut">
                 <div class="popap-icon-absolut">
                   <input
@@ -589,7 +590,7 @@
               </div>
             </div>
             <div class="popap-card-fields">
-              <label for="popap-comment" class="popap-text-all">Comment</label>
+              <label for="popap-comment">Comment</label>
               <textarea
                 name="popap_comment"
                 id="popap-comment"
@@ -599,10 +600,7 @@
             </div>
           </div>
           <div class="popap-check">
-            <label
-              for="popap-check-box popap-text-all"
-              class="popap-check-conteiner"
-            >
+            <label for="popap-check-box" class="popap-check-conteiner">
               <input
                 type="checkbox"
                 id="popap-check-box"
