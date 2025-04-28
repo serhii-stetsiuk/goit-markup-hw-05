@@ -461,10 +461,10 @@ a.baner-basement {
 		border-radius: 4px;
 		transform: translate(-50%, -50%);
 		padding: 72px 24px 24px 24px;
+		transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .popap-fields {
-	
 	margin-bottom: 8px;
 }
 
@@ -472,6 +472,7 @@ a.baner-basement {
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .name-text-popap {
+	display: block;
 	font-weight: 400;
 		font-size: 12px;
 		line-height: 1.17;
@@ -484,13 +485,24 @@ a.baner-basement {
 		border-radius: 4px;
 		width: 100%;
 		height: 40px;
-		outline: none;
+		outline: transparent;
 		padding: 8px 16px 8px 38px;
 		background-color: transparent;
 		transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		font-weight: 400;
+			
 }
 .popap-card-comment {
-	padding-left: 16px;
+	padding: 8px 16px;
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.04em;
+	color: rgba(46, 47, 66, 0.4);
+		height: 120px;
+		resize: none;
+		border: 1px solid rgba(46, 47, 66, 0.4);
+		background-color: transparent;
+		transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .popap-card-text::placeholder {
 	color: rgba(46, 47, 66, 0.4);
@@ -503,11 +515,6 @@ a.baner-basement {
 	fill: #4d5ae5;
 }
  
-.popap-card-comment {
-		width: 100%;
-		height: 120px;
-		resize: none;
-}
 .popap-title {
 	margin: 0 auto 16px;
 	font-weight: 500;
@@ -538,6 +545,9 @@ a.baner-basement {
 		stroke: rgba(0, 0, 0, 0.1);
 
 }
+.popap-card-comment:focus {
+	border-color: #4D5AE5;
+}
 .popap-close:hover, .popap-close:focus  {
 	background-color: #404BBF;
 	fill: #fff;
@@ -550,8 +560,9 @@ a.baner-basement {
 }
 .popap-text-men {
 	position: absolute;
-	top: 8px;
+	top: 50%;
 	left: 16px;	
+	transform: translateY(-50%);
 }
 .popap-check {
 	margin-bottom: 24px;
@@ -572,10 +583,10 @@ a.baner-basement {
 	border: 1px solid rgba(46, 47, 66, 0.4);
 	width: 16px;
 	height: 16px;
-	display: flex;
+	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	
+	fill: transparent;
 }
 .popap-check-conteiner {
 	display: flex;
@@ -601,7 +612,8 @@ a.baner-basement {
 	color: #4d5ae5;
 }
 
-.is-open {opacity: 1;
+.is-open {
+	opacity: 1;
 	visibility:visible;
 	pointer-events:visible;
 }
