@@ -432,7 +432,8 @@ a.baner-basement {
 		font-family: "Roboto", sans-serif;
 		border: none;
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
+		align-items: center;
 }
 /* Popap */
 
@@ -459,24 +460,21 @@ a.baner-basement {
 		background-color: #fcfcfc;
 		border-radius: 4px;
 		transform: translate(-50%, -50%);
-		padding: 72px 24px;
+		padding: 72px 24px 24px 24px;
 }
+
 .popap-fields {
-	display: flex;
-		flex-direction: column;
-}
-.popap-fields {
-	gap: 8px;
-	margin-bottom: 16px;
+	
+	margin-bottom: 8px;
 }
 
 .transform {
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.popap-card-fields label {
+.name-text-popap {
 	font-weight: 400;
 		font-size: 12px;
-		line-height: 1.16667;
+		line-height: 1.17;
 		letter-spacing: 0.04em;
 		color: #8e8f99;
 		margin-bottom: 4px;
@@ -488,7 +486,8 @@ a.baner-basement {
 		height: 40px;
 		outline: none;
 		padding: 8px 16px 8px 38px;
-		transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		background-color: transparent;
+		transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .popap-card-comment {
 	padding-left: 16px;
@@ -497,7 +496,7 @@ a.baner-basement {
 	color: rgba(46, 47, 66, 0.4);
 }
 .popap-card-text:hover, .popap-card-text:focus {
-	border: 1px solid #4d5ae5;
+	border-color: #4D5AE5;
 }
 
 .popap-icon-absolut:has(input:hover), .popap-icon-absolut:has(input:focus) .popap-text-men{
