@@ -581,12 +581,13 @@ a.baner-basement {
 		display: block;
 		margin-bottom: 4px;
 }
-.popap-check-box-tru {
+span.popap-check-box-tru {
+	display: inline-flex;
 	border-radius: 2px;
 	border: 1px solid rgba(46, 47, 66, 0.4);
 	width: 16px;
 	height: 16px;
-	display: inline-flex;
+	
 	justify-content: center;
 	align-items: center;
 	fill: transparent;
