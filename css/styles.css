@@ -587,17 +587,12 @@ span.popap-check-box-tru {
 	border: 1px solid rgba(46, 47, 66, 0.4);
 	width: 16px;
 	height: 16px;
-	
 	justify-content: center;
 	align-items: center;
 	fill: transparent;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .popap-check-conteiner {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	gap: 8px;
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 1.16667;
